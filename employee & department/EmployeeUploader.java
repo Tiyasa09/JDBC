@@ -121,7 +121,7 @@ class DepartmentNotFoundException extends Exception{
 		e_id=sc.nextInt();
 		//System.out.println(+e_id);
 		
-		ResultSet rs = stmt.executeQuery("select esalary from employeee where e_id="+e_id);
+		ResultSet rs = stmt.executeQuery("select esalary from employee where e_id="+e_id);
 		while(rs.next()) {
 			esalary=rs.getInt(1);
 			System.out.println(esalary);
